@@ -215,8 +215,10 @@
   border-radius: 50%;
   background:white;
   z-index:4;
-  opacity:0.2;
-  -pie-background:rgba(255,255,255,0.2);
+  -webkit-animation: opa2 1.75s forwards ease;
+  -ms-animation: opa2 1.75s forwards ease;
+  -moz-animation: opa2 1.75s forwards ease;
+  animation: opa2 1.75s forwards ease;
 }
 @-webkit-keyframes scale {
   0% {transform: scale(0) rotate(0deg);}
@@ -233,4 +235,12 @@
 @keyframes opa {
   0%,70% {opacity: 0;}
   100% {opacity: 1;}
+}
+@-webkit-keyframes opa2 {
+  0%,70% {opacity: 0;}
+  100% {opacity: 0.2; -pie-background:rgba(255,255,255,0.2);}
+}
+@keyframes opa2 {
+  0%,70% {opacity: 0;}
+  100% {opacity: 0.2; -pie-background:rgba(255,255,255,0.2);}
 }
