@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Haycco LOGO </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="haycco">
+  <meta name="Keywords" content="haycco,logo,haycco logo">
+  <meta name="Description" content="HAYCCO LOGO">
+<style type="text/css">
+.logo {
+  position: relative;
+  display:inline-block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  background:transparent;
+}
+.outside-pie {
+  position:absolute;
+  left:0px;
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  background:#1bbc9b;
+  float:left;
+  z-index:3;
+  overflow:hidden;
+ -webkit-animation: scale .5s linear;
+  -ms-animation: scale .5s linear;
+  -moz-animation: scale .5s linear;
+  animation: scale .5s linear;
+}
+.middle-pie {
+  position:absolute;
+  top:20px;
+  left:20px;
+  width:160px;
+  height:160px;
+  overflow:hidden;
+  border-radius: 50%;
+  background:white;
+  float:left;
+  z-index:3;
+  -webkit-animation: scale 1s forwards;
+  -ms-animation: scale 1s forwards;
+  -moz-animation: scale 1s forwards;
+  animation: scale 1s forwards;
+}
+.inner-pie {
+  position:absolute;
+  top:10px;
+  left:10px;
+  width:140px;
+  height:140px;
+  border-radius: 50%;
+  background:#1bbc9b;
+  float:left;
+  z-index:4;
+}
+.middle-pie .litter-pie {
+  width:80px;
+  height:80px;
+  z-index:5;
+}
+.middle-pie .top-pie {
+  top:-20px;
+  left:40px;
+}
+.middle-pie .right-pie {
+  top:40px;
+  left:120px;
+}
+.middle-pie .bottom-pie {
+  top:100px;
+  left:40px;
+}
+.middle-pie .left-pie {
+  top:40px;
+  left:-40px;
+}
+.logo-label {
+ color: #1bbc9b;
+ font-weight: bold;
+ font-size: 1.2em;
+ line-height: 100%;
+ top: 150px;
+ position: absolute;
+ z-index: 3;
+ left: 67px;
+ font-family: Arial, sans-serif;
+  -webkit-animation: opa 1.5s forwards ease;
+  -ms-animation: opa 1.5s forwards ease;
+  -moz-animation: opa 1.5s forwards ease;
+  animation: opa 1.5s forwards ease;
+}
+.logo-container {
+  margin: 80px auto;
+  position: relative;
+  text-align: center;
+}
+.glow-top-pie {
+  position:absolute;
+  top:-150px;
+  left:-25px;
+  width:250px;
+  height:250px;
+  border-radius: 50%;
+  background:white;
+  z-index:4;
+  opacity:0.2;
+  -pie-background:rgba(255,255,255,0.2);
+}
+@-webkit-keyframes scale {
+  0% {transform: scale(0) rotate(0deg);}
+  100% {transform: scale(1) rotate(360deg);}
+}
+@keyframes rota {
+  0% {transform: scale(0) rotate(0deg);}
+  100% {transform: scale(1) rotate(360deg);}
+}
+@-webkit-keyframes opa {
+  0%,70% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes opa {
+  0%,70% {opacity: 0;}
+  100% {opacity: 1;}
+}
+</style>
+<!--[if lt IE 9]>
+<style type="text/css">
+  .outside-pie, .glow-top-pie, .middle-pie, .inner-pie {
+	behavior: url(pie/PIE.htc);
+  }
+</style>
+<![endif]-->
+ </head>
+
+ <body>
+  <div class="logo-container">
+    <div class="logo" title="Haycco Logo">
+	  <div class="glow-top-pie"></div>
+      <div class="outside-pie"></div>
+	  <div class="middle-pie">
+	    <div class="middle-pie litter-pie top-pie"></div>
+		<div class="middle-pie litter-pie right-pie"></div>
+	    <div class="middle-pie litter-pie bottom-pie"></div>
+		<div class="middle-pie litter-pie left-pie"></div>
+		<div class="inner-pie"></div>	
+	  </div>
+	  <label class="logo-label">Haycco</label>
+    </div>
+	<div class="logo" title="No Label">
+	  <div class="glow-top-pie"></div>
+      <div class="outside-pie"></div>
+	  <div class="middle-pie">
+	    <div class="middle-pie litter-pie top-pie"></div>
+		<div class="middle-pie litter-pie right-pie"></div>
+	    <div class="middle-pie litter-pie bottom-pie"></div>
+		<div class="middle-pie litter-pie left-pie"></div>
+		<div class="inner-pie"></div>	
+	  </div>
+    </div>
+  </div>
+ </body>
+</html>
