@@ -457,7 +457,7 @@ h1.title {
 }
 
 #container {
-  border: 1px solid #2a2a2a;
+  border: 1px solid #148C73;
   background: #ddd url(../images/pattern.png);
   box-shadow: 0 0 5px #b1b1b1;
 }
@@ -475,8 +475,8 @@ p.tagline {
 }
 
 .download-bar {
-  background: #222;
-  border: 5px solid #444;
+  background: #1bbc9b;
+  border: 5px solid #148C73;
   padding: 10px;
   margin: 0 -35px 20px;
   position: relative;
@@ -554,6 +554,7 @@ p.tagline {
   text-indent: 0;
   width: auto;
   height: auto;
+  color: #FFFFFF;
   opacity: 1;
   filter:alpha(opacity=100);  /* IE 5-7 */
 }
@@ -564,8 +565,8 @@ p.tagline {
   left: 50%;
   width: 693px;
   margin-left: -352px;
-  background: #222;
-  border: 5px solid #444;
+  background: #1bbc9b;
+  border: 5px solid #148C73;
   color: #fff;
   opacity: 0;
   visibility: hidden;
@@ -682,11 +683,11 @@ footer {
 }
 
 footer .owner {
-  background: #222;
-  border: 5px solid #444;
+  background: #1bbc9b;
+  border: 5px solid #148C73;
   padding: 5px 15px;
   margin: -67px -10px 35px;
-  color: #d6d6d6;
+  color: #F0F0F0;
 }
 
 footer .creds small {
@@ -717,6 +718,7 @@ footer .owner p {
 footer .owner p a {
   font-size: 16px;
   font-style: italic;
+  color: #FDEF72;
 }
 
 /* Markdown */
@@ -889,7 +891,7 @@ footer .owner p a {
   height: 90px;
   margin-left: -60px;
   margin-top: -25px;
-  content: "‟";
+  content: "鈥�";
   display: block;
   float: left;
 }
