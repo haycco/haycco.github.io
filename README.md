@@ -1,2 +1,2 @@
-# haycco.github.io
-haycco
+# haycco blog
+http://haycco.ren
