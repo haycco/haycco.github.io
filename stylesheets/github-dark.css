@@ -113,4 +113,124 @@
 .pl-mo /* meta.output */ {
   color: #264ec5;
 }
-
+/* my html5 logo */
+.logo {
+  position: relative;
+  display:inline-block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  background:transparent;
+}
+.outside-pie {
+  position:absolute;
+  left:0px;
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  background:#1bbc9b;
+  float:left;
+  z-index:3;
+  overflow:hidden;
+ -webkit-animation: scale .5s linear;
+  -ms-animation: scale .5s linear;
+  -moz-animation: scale .5s linear;
+  animation: scale .5s linear;
+}
+.middle-pie {
+  position:absolute;
+  top:20px;
+  left:20px;
+  width:160px;
+  height:160px;
+  overflow:hidden;
+  border-radius: 50%;
+  background:white;
+  float:left;
+  z-index:3;
+  -webkit-animation: scale 1s forwards;
+  -ms-animation: scale 1s forwards;
+  -moz-animation: scale 1s forwards;
+  animation: scale 1s forwards;
+}
+.inner-pie {
+  position:absolute;
+  top:10px;
+  left:10px;
+  width:140px;
+  height:140px;
+  border-radius: 50%;
+  background:#1bbc9b;
+  float:left;
+  z-index:4;
+}
+.middle-pie .litter-pie {
+  width:80px;
+  height:80px;
+  z-index:5;
+}
+.middle-pie .top-pie {
+  top:-20px;
+  left:40px;
+}
+.middle-pie .right-pie {
+  top:40px;
+  left:120px;
+}
+.middle-pie .bottom-pie {
+  top:100px;
+  left:40px;
+}
+.middle-pie .left-pie {
+  top:40px;
+  left:-40px;
+}
+.logo-label {
+ color: #1bbc9b;
+ font-weight: bold;
+ font-size: 1.2em;
+ line-height: 100%;
+ top: 150px;
+ position: absolute;
+ z-index: 3;
+ left: 67px;
+ font-family: Arial, sans-serif;
+  -webkit-animation: opa 1.5s forwards ease;
+  -ms-animation: opa 1.5s forwards ease;
+  -moz-animation: opa 1.5s forwards ease;
+  animation: opa 1.5s forwards ease;
+}
+.logo-container {
+  margin: 80px auto;
+  position: relative;
+  text-align: center;
+}
+.glow-top-pie {
+  position:absolute;
+  top:-150px;
+  left:-25px;
+  width:250px;
+  height:250px;
+  border-radius: 50%;
+  background:white;
+  z-index:4;
+  opacity:0.2;
+  -pie-background:rgba(255,255,255,0.2);
+}
+@-webkit-keyframes scale {
+  0% {transform: scale(0) rotate(0deg);}
+  100% {transform: scale(1) rotate(360deg);}
+}
+@keyframes rota {
+  0% {transform: scale(0) rotate(0deg);}
+  100% {transform: scale(1) rotate(360deg);}
+}
+@-webkit-keyframes opa {
+  0%,70% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes opa {
+  0%,70% {opacity: 0;}
+  100% {opacity: 1;}
+}
