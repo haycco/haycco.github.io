@@ -186,7 +186,6 @@ img {
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
-
 svg:not(:root) {
   overflow: hidden;
 }
@@ -450,7 +449,10 @@ h1.title {
   margin: 30px 20px 10px;
   text-align: center;
 }
-
+header.title {
+  margin: 30px 20px 10px;
+  text-align: center;
+}
 .wrapper {
   width: 675px;
   margin: 0 auto;
