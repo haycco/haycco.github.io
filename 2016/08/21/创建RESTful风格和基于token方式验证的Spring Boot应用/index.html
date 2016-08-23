@@ -84,17 +84,23 @@
 
 
 
-<meta name="description" content="RESTful是什么？可能有些人还不知道RESTful是什么，这里引用百度百科的部分解说：RESTful是一种软件架构风格，设计风格而不是标准，只是提供了一组设计原则和约束条件。它主要用于客户端和服务器交互类的软件。基于这个风格设计的软件可以更简洁，更有层次，更易于实现缓存等机制。REST（英文：Representational State Transfer，简称REST）描述了一个架构样式的网络">
+<meta name="description" content="RESTful是什么？可能有些人还不知道RESTful是什么，这里引用百度百科的部分解说：
+
+RESTful是一种软件架构风格，设计风格而不是标准，只是提供了一组设计原则和约束条件。它主要用于客户端和服务器交互类的软件。基于这个风格设计的软件可以更简洁，更有层次，更易于实现缓存等机制。REST（英文：Representational State Transfer，简称REST）描述了一个架构样式的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="创建RESTful风格和基于token方式验证的Spring Boot应用">
 <meta property="og:url" content="http://yoursite.com/2016/08/21/创建RESTful风格和基于token方式验证的Spring Boot应用/index.html">
 <meta property="og:site_name" content="Haycco blog">
-<meta property="og:description" content="RESTful是什么？可能有些人还不知道RESTful是什么，这里引用百度百科的部分解说：RESTful是一种软件架构风格，设计风格而不是标准，只是提供了一组设计原则和约束条件。它主要用于客户端和服务器交互类的软件。基于这个风格设计的软件可以更简洁，更有层次，更易于实现缓存等机制。REST（英文：Representational State Transfer，简称REST）描述了一个架构样式的网络">
+<meta property="og:description" content="RESTful是什么？可能有些人还不知道RESTful是什么，这里引用百度百科的部分解说：
+
+RESTful是一种软件架构风格，设计风格而不是标准，只是提供了一组设计原则和约束条件。它主要用于客户端和服务器交互类的软件。基于这个风格设计的软件可以更简洁，更有层次，更易于实现缓存等机制。REST（英文：Representational State Transfer，简称REST）描述了一个架构样式的">
 <meta property="og:image" content="http://yoursite.com/images/oauth_token.jpg">
-<meta property="og:updated_time" content="2016-08-21T15:42:34.168Z">
+<meta property="og:updated_time" content="2016-08-23T12:56:25.991Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="创建RESTful风格和基于token方式验证的Spring Boot应用">
-<meta name="twitter:description" content="RESTful是什么？可能有些人还不知道RESTful是什么，这里引用百度百科的部分解说：RESTful是一种软件架构风格，设计风格而不是标准，只是提供了一组设计原则和约束条件。它主要用于客户端和服务器交互类的软件。基于这个风格设计的软件可以更简洁，更有层次，更易于实现缓存等机制。REST（英文：Representational State Transfer，简称REST）描述了一个架构样式的网络">
+<meta name="twitter:description" content="RESTful是什么？可能有些人还不知道RESTful是什么，这里引用百度百科的部分解说：
+
+RESTful是一种软件架构风格，设计风格而不是标准，只是提供了一组设计原则和约束条件。它主要用于客户端和服务器交互类的软件。基于这个风格设计的软件可以更简洁，更有层次，更易于实现缓存等机制。REST（英文：Representational State Transfer，简称REST）描述了一个架构样式的">
 <meta name="twitter:image" content="http://yoursite.com/images/oauth_token.jpg">
 
 
@@ -298,7 +304,10 @@
       
 
       
-        <h2 id="RESTful是什么？"><a href="#RESTful是什么？" class="headerlink" title="RESTful是什么？"></a>RESTful是什么？</h2><p>可能有些人还不知道RESTful是什么，这里引用百度百科的部分解说：<br><em>RESTful是一种软件架构风格，设计风格而不是标准，只是提供了一组设计原则和约束条件。它主要用于客户端和服务器交互类的软件。基于这个风格设计的软件可以更简洁，更有层次，更易于实现缓存等机制。<br>REST（英文：Representational State Transfer，简称REST）描述了一个架构样式的网络系统，比如 web 应用程序。它首次出现在 2000 年 Roy Fielding 的博士论文中，他是 HTTP 规范的主要编写者之一。在目前主流的三种Web服务交互方案中，REST相比于SOAP（Simple Object Access protocol，简单对象访问协议）以及XML-RPC更加简单明了，无论是对URL的处理还是对Payload的编码，REST都倾向于用更加简单轻量的方法设计和实现。值得注意的是REST并没有一个明确的标准，而更像是一种设计的风格。</em></p>
+        <h2 id="RESTful是什么？"><a href="#RESTful是什么？" class="headerlink" title="RESTful是什么？"></a>RESTful是什么？</h2><p>可能有些人还不知道RESTful是什么，这里引用百度百科的部分解说：</p>
+<blockquote>
+<p><em>RESTful是一种软件架构风格，设计风格而不是标准，只是提供了一组设计原则和约束条件。它主要用于客户端和服务器交互类的软件。基于这个风格设计的软件可以更简洁，更有层次，更易于实现缓存等机制。<br>REST（英文：Representational State Transfer，简称REST）描述了一个架构样式的网络系统，比如 web 应用程序。它首次出现在 2000 年 Roy Fielding 的博士论文中，他是 HTTP 规范的主要编写者之一。在目前主流的三种Web服务交互方案中，REST相比于SOAP（Simple Object Access protocol，简单对象访问协议）以及XML-RPC更加简单明了，无论是对URL的处理还是对Payload的编码，REST都倾向于用更加简单轻量的方法设计和实现。值得注意的是REST并没有一个明确的标准，而更像是一种设计的风格。</em></p>
+</blockquote>
 <p>上面说的东西看着似懂非懂的样子，我们换一种程序员的说法。<br>在 REST 样式的 Web 服务中，每个资源都有一个地址。资源本身都是方法调用的目标，方法列表对所有资源都是一样的。这些方法都是标准方法，包括 HTTP GET、POST、PUT、DELETE，还可能包括 HEADER 和 OPTIONS。<br>我们在开发和设计的API的URL地址要跟HTTP的请求方式对应起来，让我们来看看一个标准的URL地址 <code>http://example.com/products/</code> 对应的CRUD操作是什么：<br><a id="more"></a></p>
 <table>
 <thead>
