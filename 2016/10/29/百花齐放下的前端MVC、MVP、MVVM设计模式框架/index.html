@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="工作," />
+  <meta name="keywords" content="设计模式,MVVM,MVC,MVP," />
 
 
 
@@ -84,24 +84,23 @@
 
 
 
-<meta name="description" content="最近丁香园CTO离职事件在业内闹的沸沸扬扬，作为我们IT从事技术类工作的同行来说有很大的触动，甚至给我自己也上了一课。记得在知乎上有一个讨论的话题，为什么技术总是被轻视？国内做技术能不能有较大发展？有人曾说道：
-
-陆贾对陈平说过：“天下安，注意相；天下危，注意将！”，天下太平的生活，文官得到重视；天下大乱的时候武官得到重视。大到一个行业的兴起，小到一家公司的创业期，或者一款产品的开发期，打江山的时">
+<meta name="description" content="目前前端的工程化、结构化越来越普及，各种MV*系列的框架应运而生，比较多的有三种设计模式：MVC、MVP、MVVM，本文阐述一下自己对这3种设计模式的看法。
+MVC模式MVC即Model-VIew-Controller。MVC模式致力于关注点的切分，这意味着model和controller的逻辑是不与用户界面（View）挂钩的。因此，维护和测试程序变得更加简单容易。MVC设计模式将应用程序分离为3">
 <meta property="og:type" content="article">
-<meta property="og:title" content="杯酒释兵权">
-<meta property="og:url" content="http://yoursite.com/2016/09/02/杯酒释兵权/index.html">
+<meta property="og:title" content="百花齐放下的前端MVC、MVP、MVVM设计模式框架">
+<meta property="og:url" content="http://yoursite.com/2016/10/29/百花齐放下的前端MVC、MVP、MVVM设计模式框架/index.html">
 <meta property="og:site_name" content="Haycco blog">
-<meta property="og:description" content="最近丁香园CTO离职事件在业内闹的沸沸扬扬，作为我们IT从事技术类工作的同行来说有很大的触动，甚至给我自己也上了一课。记得在知乎上有一个讨论的话题，为什么技术总是被轻视？国内做技术能不能有较大发展？有人曾说道：
-
-陆贾对陈平说过：“天下安，注意相；天下危，注意将！”，天下太平的生活，文官得到重视；天下大乱的时候武官得到重视。大到一个行业的兴起，小到一家公司的创业期，或者一款产品的开发期，打江山的时">
-<meta property="og:image" content="http://yoursite.com/images/micro-era.jpg">
-<meta property="og:updated_time" content="2016-10-29T04:15:35.498Z">
+<meta property="og:description" content="目前前端的工程化、结构化越来越普及，各种MV*系列的框架应运而生，比较多的有三种设计模式：MVC、MVP、MVVM，本文阐述一下自己对这3种设计模式的看法。
+MVC模式MVC即Model-VIew-Controller。MVC模式致力于关注点的切分，这意味着model和controller的逻辑是不与用户界面（View）挂钩的。因此，维护和测试程序变得更加简单容易。MVC设计模式将应用程序分离为3">
+<meta property="og:image" content="http://yoursite.com/images/mvc.png">
+<meta property="og:image" content="http://yoursite.com/images/mvp.png">
+<meta property="og:image" content="http://yoursite.com/images/mvvm.png">
+<meta property="og:updated_time" content="2016-10-29T06:25:33.768Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="杯酒释兵权">
-<meta name="twitter:description" content="最近丁香园CTO离职事件在业内闹的沸沸扬扬，作为我们IT从事技术类工作的同行来说有很大的触动，甚至给我自己也上了一课。记得在知乎上有一个讨论的话题，为什么技术总是被轻视？国内做技术能不能有较大发展？有人曾说道：
-
-陆贾对陈平说过：“天下安，注意相；天下危，注意将！”，天下太平的生活，文官得到重视；天下大乱的时候武官得到重视。大到一个行业的兴起，小到一家公司的创业期，或者一款产品的开发期，打江山的时">
-<meta name="twitter:image" content="http://yoursite.com/images/micro-era.jpg">
+<meta name="twitter:title" content="百花齐放下的前端MVC、MVP、MVVM设计模式框架">
+<meta name="twitter:description" content="目前前端的工程化、结构化越来越普及，各种MV*系列的框架应运而生，比较多的有三种设计模式：MVC、MVP、MVVM，本文阐述一下自己对这3种设计模式的看法。
+MVC模式MVC即Model-VIew-Controller。MVC模式致力于关注点的切分，这意味着model和controller的逻辑是不与用户界面（View）挂钩的。因此，维护和测试程序变得更加简单容易。MVC设计模式将应用程序分离为3">
+<meta name="twitter:image" content="http://yoursite.com/images/mvc.png">
 
 
 
@@ -119,7 +118,7 @@
   };
 </script>
 
-  <title> 杯酒释兵权 | Haycco blog </title>
+  <title> 百花齐放下的前端MVC、MVP、MVVM设计模式框架 | Haycco blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -248,7 +247,7 @@
             
             
               
-                杯酒释兵权
+                百花齐放下的前端MVC、MVP、MVVM设计模式框架
               
             
           </h1>
@@ -260,8 +259,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-02T10:19:44+08:00" content="2016-09-02">
-              2016-09-02
+            <time itemprop="dateCreated" datetime="2016-10-29T12:34:56+08:00" content="2016-10-29">
+              2016-10-29
             </time>
           </span>
 
@@ -271,8 +270,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/09/02/杯酒释兵权/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/02/杯酒释兵权/" itemprop="commentsCount"></span>
+                <a href="/2016/10/29/百花齐放下的前端MVC、MVP、MVVM设计模式框架/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/29/百花齐放下的前端MVC、MVP、MVVM设计模式框架/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -282,7 +281,7 @@
 
           
           
-             <span id="/2016/09/02/杯酒释兵权/" class="leancloud_visitors" data-flag-title="杯酒释兵权">
+             <span id="/2016/10/29/百花齐放下的前端MVC、MVP、MVVM设计模式框架/" class="leancloud_visitors" data-flag-title="百花齐放下的前端MVC、MVP、MVVM设计模式框架">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -304,20 +303,58 @@
       
 
       
-        <p>最近丁香园CTO离职事件在业内闹的沸沸扬扬，作为我们IT从事技术类工作的同行来说有很大的触动，甚至给我自己也上了一课。记得在知乎上有一个讨论的话题，为什么技术总是被轻视？国内做技术能不能有较大发展？有人曾说道：</p>
-<blockquote>
-<p>陆贾对陈平说过：“天下安，注意相；天下危，注意将！”，天下太平的生活，文官得到重视；天下大乱的时候武官得到重视。大到一个行业的兴起，小到一家公司的创业期，或者一款产品的开发期，打江山的时候自然武将重要，守江山就是另外一回事了。</p>
-</blockquote>
+        <p>目前前端的工程化、结构化越来越普及，各种MV*系列的框架应运而生，比较多的有三种设计模式：MVC、MVP、MVVM，本文阐述一下自己对这3种设计模式的看法。</p>
+<h2 id="MVC模式"><a href="#MVC模式" class="headerlink" title="MVC模式"></a>MVC模式</h2><p>MVC即Model-VIew-Controller。MVC模式致力于关注点的切分，这意味着model和controller的逻辑是不与用户界面（View）挂钩的。因此，维护和测试程序变得更加简单容易。<br>MVC设计模式将应用程序分离为3个主要的方面：Model，View和Controller</p>
+<p><img src="/images/mvc.png" alt="MVC设计模式图" title="MVC Pattern"></p>
 <a id="more"></a>
-<p>大家一起创业，打江山容易，守江山难。做技术的能不能得到上级的赏识，对发挥很重要。我也自认为自己是一个热爱技术的追随者，希望自己的团队有良好的技术氛围。但最近人来人往，以及一起努力的队友各个东奔西离，目前公司的人文和处事发生的巨大变化，伙伴们的辛勤付出得不到相应的回报。只有老板那所谓的情怀和画饼，越来越让自己对现状产生怀疑。毕竟情怀不能当饭吃！<br>做技术到了现在这么一个状态，到底是不是应该出来做一份完全属于自己的事业？相信很多做技术的人，很大一部分都会半道出家创业。但自己不想为了创业而创业，必须明确创业的目标，以及能解决生存问题，不然对不起拉拢跟随自己的兄弟们。</p>
-<p>手下的人走完了，老板也没有继续给我招人的意向，Every day waiting to be sold.<br>而且我还有很多技术理念还未完全实施落地，前面我在公司产品上应用了spring boot之后对开发和实施运维的工作效率提升尝到了甜头，解放了不少生产力。我还构想着要做一个自我修复型微服务分布式的系统架构，把spring cloud应用和推广到实际的生产线上。</p>
-<p><img src="/images/micro-era.jpg" alt="自我修复型微服务分布式的系统架构图" title="自我修复型微服务分布式的系统架构图"></p>
-<p>不管怎么样，厚积薄发吧。技术从业者有一些点还是值得我们关注的：</p>
-<ol>
-<li>远离没有技术基因的公司，或没技术基因的创业团队。</li>
-<li>寻找新的行业，对技术比较倚重的领域，或者从事专门提供技术服务的工作。</li>
-<li>自己成长并学习更多领域的内容，出将入相。</li>
+<h3 id="Model"><a href="#Model" class="headerlink" title="Model"></a>Model</h3><blockquote>
+<p>Model代表了描述业务路逻辑，业务模型、数据操作、数据模型的一系列类的集合。这层也定义了数据修改和操作的业务规则。</p>
+</blockquote>
+<h3 id="View"><a href="#View" class="headerlink" title="View"></a>View</h3><blockquote>
+<p>View代表了UI组件，像CSS，jQuery，HTML等。他只负责展示从controller接收到的数据。也就是把model转化成UI。</p>
+</blockquote>
+<h3 id="Controller"><a href="#Controller" class="headerlink" title="Controller"></a>Controller</h3><blockquote>
+<p>Controll负责处理流入的请求。它通过View来接受用户的输入，之后利用Model来处理用户的数据，最后把结果返回给View。Controll就是View和Model之间的一个协调者。</p>
+</blockquote>
+<h3 id="JS代表框架"><a href="#JS代表框架" class="headerlink" title="JS代表框架"></a>JS代表框架</h3><p>Backbone.js、Angular.js</p>
+<h2 id="MVP模式"><a href="#MVP模式" class="headerlink" title="MVP模式"></a>MVP模式</h2><p>这个模式把Presenter换成Controller就非常和MVC相像了。这个设计模式把应用程序分成了3个主要方面：Model、View和Presenter。</p>
+<p><img src="/images/mvp.png" alt="MVP设计模式图" title="MVP Pattern"></p>
+<h3 id="Model-1"><a href="#Model-1" class="headerlink" title="Model"></a>Model</h3><blockquote>
+<p>Model层代表了描述业务逻辑和数据的一系列类的集合。它也定义了数据修改和操作的业务规则。</p>
+</blockquote>
+<h3 id="View-1"><a href="#View-1" class="headerlink" title="View"></a>View</h3><blockquote>
+<p>View代表了UI组件，像CSS，JQuery，html等。他只负责展示从Presenter接收到的数据。也就是把模型（非Modle层模型）转化成UI。</p>
+</blockquote>
+<h3 id="Presenter"><a href="#Presenter" class="headerlink" title="Presenter"></a>Presenter</h3><blockquote>
+<p>Presenter负责处理View背后所有的UI事件。它通过View接收用户输入，之后利用Model来处理用户的数据，最后把结果返回给View。与View和Controller不同，View和Presenter之间是完全解耦的，他们通过接口来交互。另外，presenter不像controller处理进入的请求。</p>
+</blockquote>
+<p>这个模式被普遍的引用于ASP.NET Web Forms 应用程序。并且也应用于windows form。</p>
+<h3 id="MVP模式关键点"><a href="#MVP模式关键点" class="headerlink" title="MVP模式关键点"></a>MVP模式关键点</h3><ol>
+<li>用户和View交互。</li>
+<li>View和Presenter是一对一关系。意味着一个Presenter只映射一个View。</li>
+<li>View持有Presenter的引用（通过接口交互，并不直接引用Presenter），但是View不持有Model的引用。</li>
+<li>在View和Presenter之间可以双向交互。</li>
 </ol>
+<h3 id="JS代表框架-1"><a href="#JS代表框架-1" class="headerlink" title="JS代表框架"></a>JS代表框架</h3><p>Riot.js</p>
+<h2 id="MVVM模式"><a href="#MVVM模式" class="headerlink" title="MVVM模式"></a>MVVM模式</h2><p>MVVM即Model-View-View Model。这个模式提供对View和View Model的双向数据绑定。这使得View Model的状态改变可以自动传递给View。典型的情况是，View Model通过使用obsever模式（观察者模式）来将View Model的变化通知给model。</p>
+<p><img src="/images/mvvm.png" alt="MVVM设计模式图" title="MVVM Pattern"></p>
+<h3 id="Model-2"><a href="#Model-2" class="headerlink" title="Model"></a>Model</h3><blockquote>
+<p>Model层代表了描述业务逻辑和数据的一系列类的集合。它也定义了数据修改和操作的业务规则。</p>
+</blockquote>
+<h3 id="View-2"><a href="#View-2" class="headerlink" title="View"></a>View</h3><blockquote>
+<p>View代表了UI组件，像CSS，JQuery，html等。他只负责展示从Presenter接收到的数据。也就是把模型转化成UI。</p>
+</blockquote>
+<h3 id="View-Model"><a href="#View-Model" class="headerlink" title="View Model"></a>View Model</h3><blockquote>
+<p>View Model负责暴漏方法，命令，其他属性来操作VIew的状态，组装model作为View动作的结果，并且触发view自己的事件。</p>
+</blockquote>
+<p>这个模式被广泛应用于WPF，Silverlight，Caliburn，nRoute 等。</p>
+<h3 id="MVVM模式关键点"><a href="#MVVM模式关键点" class="headerlink" title="MVVM模式关键点"></a>MVVM模式关键点</h3><ol>
+<li>用户和View交互。</li>
+<li>View和ViewModel是多对一关系。意味着一个ViewModel只映射多个View。</li>
+<li>View持有ViewModel的引用，但是ViewModel没有任何View的信息。</li>
+<li>View 和ViewModel之间有<strong>双向数据绑定关系</strong>。</li>
+</ol>
+<h3 id="JS代表框架-2"><a href="#JS代表框架-2" class="headerlink" title="JS代表框架"></a>JS代表框架</h3><p>Vue.js、Knockout.js、Angular.js</p>
 
       
     </div>
@@ -355,7 +392,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/工作/" rel="tag">#工作</a>
+            <a href="/tags/设计模式/" rel="tag">#设计模式</a>
+          
+            <a href="/tags/MVVM/" rel="tag">#MVVM</a>
+          
+            <a href="/tags/MVC/" rel="tag">#MVC</a>
+          
+            <a href="/tags/MVP/" rel="tag">#MVP</a>
           
         </div>
       
@@ -364,17 +407,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/08/21/创建RESTful风格和基于token方式验证的Spring Boot应用/" rel="next" title="创建RESTful风格和基于token方式验证的Spring Boot应用">
-                <i class="fa fa-chevron-left"></i> 创建RESTful风格和基于token方式验证的Spring Boot应用
+              <a href="/2016/09/02/杯酒释兵权/" rel="next" title="杯酒释兵权">
+                <i class="fa fa-chevron-left"></i> 杯酒释兵权
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/29/百花齐放下的前端MVC、MVP、MVVM设计模式框架/" rel="prev" title="百花齐放下的前端MVC、MVP、MVVM设计模式框架">
-                百花齐放下的前端MVC、MVP、MVVM设计模式框架 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -400,8 +439,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/09/02/杯酒释兵权/"
-           data-title="杯酒释兵权" data-url="http://yoursite.com/2016/09/02/杯酒释兵权/">
+      <div class="ds-thread" data-thread-key="2016/10/29/百花齐放下的前端MVC、MVP、MVVM设计模式框架/"
+           data-title="百花齐放下的前端MVC、MVP、MVVM设计模式框架" data-url="http://yoursite.com/2016/10/29/百花齐放下的前端MVC、MVP、MVVM设计模式框架/">
       </div>
     
   </div>
@@ -514,7 +553,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MVC模式"><span class="nav-number">1.</span> <span class="nav-text">MVC模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Model"><span class="nav-number">1.1.</span> <span class="nav-text">Model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#View"><span class="nav-number">1.2.</span> <span class="nav-text">View</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Controller"><span class="nav-number">1.3.</span> <span class="nav-text">Controller</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JS代表框架"><span class="nav-number">1.4.</span> <span class="nav-text">JS代表框架</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MVP模式"><span class="nav-number">2.</span> <span class="nav-text">MVP模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-1"><span class="nav-number">2.1.</span> <span class="nav-text">Model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#View-1"><span class="nav-number">2.2.</span> <span class="nav-text">View</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Presenter"><span class="nav-number">2.3.</span> <span class="nav-text">Presenter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MVP模式关键点"><span class="nav-number">2.4.</span> <span class="nav-text">MVP模式关键点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JS代表框架-1"><span class="nav-number">2.5.</span> <span class="nav-text">JS代表框架</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MVVM模式"><span class="nav-number">3.</span> <span class="nav-text">MVVM模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-2"><span class="nav-number">3.1.</span> <span class="nav-text">Model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#View-2"><span class="nav-number">3.2.</span> <span class="nav-text">View</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#View-Model"><span class="nav-number">3.3.</span> <span class="nav-text">View Model</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MVVM模式关键点"><span class="nav-number">3.4.</span> <span class="nav-text">MVVM模式关键点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JS代表框架-2"><span class="nav-number">3.5.</span> <span class="nav-text">JS代表框架</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
